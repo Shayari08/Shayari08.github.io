@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <style>
-        .portfolio-container {
+        /* Style for the container div */
+        .canva-embed-container {
             position: relative;
             width: 100%;
             height: 0;
-            padding-top: 56.2500%;
-            padding-bottom: 0;
+            padding-top: 56.25%;
             box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
             margin-top: 1.6em;
             margin-bottom: 0.9em;
@@ -19,10 +19,11 @@
             will-change: transform;
         }
 
-        .portfolio-iframe {
+        /* Style for the embedded iframe */
+        .canva-embed-container iframe {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 95%;
             top: 0;
             left: 0;
             border: none;
@@ -30,7 +31,8 @@
             margin: 0;
         }
 
-        .portfolio-link {
+        /* Style for the link to Canva */
+        .canva-link {
             display: block;
             text-align: center;
             margin-top: 1em;
@@ -38,23 +40,17 @@
     </style>
 </head>
 <body>
-    <div class="portfolio-container">
+    <!-- Container for embedded Canva design -->
+    <div class="canva-embed-container">
         <iframe
             loading="lazy"
-            class="portfolio-iframe"
             src="https://www.canva.com/design/DAFte6AIOoA/view?embed"
-            frameborder="0"
-            allowfullscreen="true"
-            style="width: 100%; height: 95vh;"
+            allowfullscreen="allowfullscreen"
+            allow="fullscreen"
         ></iframe>
     </div>
-    <a
-        href="https://www.canva.com/design/DAFte6AIOoA/view?website#2utm_content=DAFte6AIOoA&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-        target="_blank"
-        rel="noopener"
-        class="portfolio-link"
-    >
-        Portfolio Website by Shayari Bagchi
-    </a>
+
+    <!-- Link to the Canva design -->
+    <a class="canva-link" href="https://www.canva.com/design/DAFte6AIOoA/view?utm_content=DAFte6AIOoA&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Portfolio Website by Shayari Bagchi</a>
 </body>
 </html>
